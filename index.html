@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Portafolio</title>
+<link rel="stylesheet" href="stile.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+  <div class="navbar">
+    <h1>BONDARENCO LAUTARO.A</h1>
+  </div>
+
+  <div id="about">
+    <h2>Sobre Mí</h2>
+    <p>Soy un estudiante del último año de secundaria E.P.E.T N°1 “INDUSTRIAL” con una fuerte ética de trabajo y una habilidad innata para resolver problemas de manera ingeniosa. </p>
+    <p>Destaco por mi atención al detalle y mi capacidad para abordar tareas complejas con inteligencia y eficiencia. Mi facilidad para adaptarme a nuevas tecnologías me permite estar siempre al día con las últimas tendencias y herramientas digitales. Busco oportunidades que me permitan desarrollar aún más estas habilidades y contribuir significativamente a cualquier equipo o proyecto.</p>
+  </div>
+
+  <div id="projects" class="carousel">
+   <center> <h2>Proyectos</h2>
+    <p>Expander la imagen con un click</p></center><br>
+    <div class="carousel-inner">
+      <div class="project">
+        <img src="/indu100.jpg" alt="Proyecto 1" onclick="openModal(this)">
+        <h3>Proyecto 1</h3>
+        <p>Este es la insgnina de la escuela creado con Blender 3D.</p>
+      </div>
+
+      <div class="project">
+        <img src="/logoIndu.png" alt="Proyecto 1" onclick="openModal(this)">
+        <h3>Proyecto 2</h3>
+        <p>Este es la insgnina de la escuela creado con Blender 3D.</p>
+      </div>
+
+      <div class="project">
+        <img src="/Captura de pantalla 2024-04-18 200223.png" alt="Proyecto 2" onclick="openModal(this)">
+        <h3>Proyecto 3</h3>
+        <p>Buzo de egresados 6 to E diseñado con inkscape </p>
+      </div>
+
+      <div class="project">
+        <img src="/Captura de pantalla 2024-04-18 200234.png" alt="Proyecto 3" onclick="openModal(this)">
+        <h3>Proyecto 4</h3>
+        <p> Chapa de de egresados 6 to E creado con blender 3d y inkscape </p>
+      </div>
+
+      <div class="project">
+        <img src="/pad.png" alt="Proyecto 4" onclick="openModal(this)">
+        <h3>Proyecto 5 </h3>
+        <p> Diseño de un pad keyboard creado en fusion 360 </p>
+      </div>
+
+      <div class="project">
+        <img src="/keyboard.png" alt="Proyecto 4" onclick="openModal(this)">
+        <h3>Proyecto 6</h3>
+        <p> Diseño del keyboard Atreus creado en fusion 360, actualmente mi principal proyecto siendo mi persona el ideador del proyecto y organizador general del mismo, este proyecto se llama "MacintoshPlus" pueden ver mas del proyecto en @macintoshplusproject </p>
+      </div>
+
+      <div class="project">
+        <img src="/proto.jpeg" alt="Proyecto 5" onclick="openModal(this)">
+        <h3>Proyecto 6</h3>
+        <p> Prototipo fisico del mini pad keyboard creado en fusion 360 e impreso en 3D </p>
+      </div>
+      <!-- Agrega más proyectos según sea necesario -->
+ </div>
+    <button class="prev" onclick="prevSlide()">&#10094;</button>
+    <button class="next" onclick="nextSlide()">&#10095;</button>
+  </div>
+
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+  <div class="footer">
+    <p>Contactame en: lautarobondarenco@gmail.com </p><br>
+    <p>Telefono: 3764673898</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
